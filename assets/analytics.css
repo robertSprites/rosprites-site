@@ -1,0 +1,73 @@
+/* Every rule is scoped to this section so future site features can coexist. */
+.ugc-analytics { --ugc-blue: #92a7ff; --ugc-green: #73d8ba; --ugc-orange: #efb77b; --ugc-pink: #d89cd8; --ugc-gray: #747f98; padding-top: 32px; border-top: 1px solid var(--line, #2b303e); }
+.ugc-analytics .ugc-heading { display: flex; justify-content: space-between; align-items: flex-start; gap: 24px; margin-bottom: 30px; }
+.ugc-analytics .ugc-eyebrow { margin: 0 0 15px; text-transform: uppercase; letter-spacing: 1.7px; font-size: 10px; color: var(--ugc-blue); }
+.ugc-analytics h2 { margin: 0; font-size: clamp(27px, 4vw, 39px); font-weight: 500; letter-spacing: -1.4px; }
+.ugc-analytics h2 span { color: var(--ugc-blue); }
+.ugc-analytics .ugc-subtitle { color: var(--muted, #a6adbd); font-size: 13px; line-height: 1.6; margin: 13px 0 0; }
+.ugc-analytics .ugc-subtitle a { color: var(--text, #f1f2f6); }
+.ugc-analytics .ugc-status { flex-shrink: 0; font-size: 11px; line-height: 1.6; color: var(--muted, #a6adbd); padding-top: 5px; text-align: right; }
+.ugc-analytics .ugc-toolbar { display: flex; justify-content: space-between; align-items: center; gap: 16px; margin-bottom: 22px; }
+.ugc-analytics .ugc-toolbar > p, .ugc-analytics .ugc-small { font-size: 11px; color: var(--muted, #a6adbd); line-height: 1.6; margin: 0; }
+.ugc-analytics .ugc-tabs { display: flex; gap: 3px; padding: 4px; border: 1px solid var(--line, #2b303e); border-radius: 9px; width: fit-content; }
+.ugc-analytics .ugc-tabs button { font: inherit; font-size: 11px; white-space: nowrap; border: 0; padding: 9px 12px; background: transparent; color: var(--muted, #a6adbd); border-radius: 5px; cursor: pointer; }
+.ugc-analytics .ugc-tabs button[aria-pressed="true"] { color: var(--text, #f1f2f6); background: #30364a; }
+.ugc-analytics .ugc-tabs button:hover { color: var(--text, #f1f2f6); background: #252a38; }
+.ugc-analytics .ugc-summary { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1px; background: var(--line, #2b303e); border: 1px solid var(--line, #2b303e); border-radius: 12px; overflow: hidden; margin-bottom: 20px; }
+.ugc-analytics .ugc-stat { padding: 22px; background: var(--surface, #191c25); min-width: 0; }
+.ugc-analytics .ugc-stat-label { font-size: 11px; color: var(--muted, #a6adbd); }
+.ugc-analytics .ugc-stat-value { display: block; font-size: clamp(23px, 2.5vw, 32px); letter-spacing: -1.2px; font-weight: 500; margin-top: 12px; font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
+.ugc-analytics .ugc-stat-note { display: block; font-size: 10px; color: var(--muted, #a6adbd); margin-top: 8px; }
+.ugc-analytics .ugc-panel { border: 1px solid var(--line, #2b303e); border-radius: 12px; padding: 24px; background: var(--surface, #191c25); min-width: 0; }
+.ugc-analytics .ugc-panel-heading { display: flex; justify-content: space-between; align-items: center; gap: 18px; margin-bottom: 24px; }
+.ugc-analytics h3 { margin: 0; font-size: 15px; font-weight: 500; letter-spacing: -.2px; }
+.ugc-analytics .ugc-panel-heading p { font-size: 11px; color: var(--muted, #a6adbd); margin: 8px 0 0; line-height: 1.5; }
+.ugc-analytics .ugc-chart svg { display: block; width: 100%; height: auto; min-height: 180px; }
+.ugc-analytics .ugc-chart text { font-family: Arial, Helvetica, sans-serif; fill: var(--muted, #a6adbd); font-size: 11px; }
+.ugc-analytics .ugc-chart .ugc-bar { opacity: .9; }
+.ugc-analytics .ugc-chart .ugc-bar:hover { opacity: 1; filter: brightness(1.25); }
+.ugc-analytics .ugc-legend { display: flex; flex-wrap: wrap; gap: 12px 20px; font-size: 10px; color: var(--muted, #a6adbd); margin-top: 15px; }
+.ugc-analytics .ugc-legend span { display: inline-flex; align-items: center; gap: 7px; max-width: 100%; }
+.ugc-analytics .ugc-legend i { width: 7px; height: 7px; border-radius: 2px; flex-shrink: 0; }
+.ugc-analytics .ugc-chart-note, .ugc-analytics .ugc-footnotes { color: var(--muted, #a6adbd); font-size: 10px; line-height: 1.7; }
+.ugc-analytics .ugc-chart-note { margin: 18px 0 0; }
+.ugc-analytics .ugc-daily-details { margin-top: 15px; font-size: 11px; color: var(--muted, #a6adbd); }
+.ugc-analytics .ugc-daily-details summary { cursor: pointer; width: fit-content; padding-block: 5px; }
+.ugc-analytics .ugc-daily-details .ugc-table-wrap { max-height: 280px; overflow: auto; margin-top: 12px; }
+.ugc-analytics .ugc-secondary { display: grid; grid-template-columns: 1.15fr 1fr; gap: 20px; margin-block: 20px; }
+.ugc-analytics .ugc-store-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 24px 16px; margin: 0 0 18px; }
+.ugc-analytics dt { font-size: 11px; color: var(--muted, #a6adbd); }
+.ugc-analytics dd { margin: 9px 0 0; font-size: 24px; letter-spacing: -.5px; font-variant-numeric: tabular-nums; }
+.ugc-analytics .ugc-location-bar { display: flex; gap: 3px; height: 10px; overflow: hidden; border-radius: 4px; background: var(--line, #2b303e); margin: 32px 0 25px; }
+.ugc-analytics .ugc-location-bar span { min-width: 1px; }
+.ugc-analytics .ugc-locations { margin: 0; display: grid; gap: 17px; }
+.ugc-analytics .ugc-locations > div { display: flex; justify-content: space-between; align-items: center; gap: 20px; }
+.ugc-analytics .ugc-locations dd { font-size: 13px; letter-spacing: 0; margin: 0; }
+.ugc-analytics .ugc-locations i { display: inline-block; width: 7px; height: 7px; border-radius: 2px; margin-right: 8px; }
+.ugc-analytics .ugc-table-wrap { overflow-x: auto; }
+.ugc-analytics table { border-collapse: collapse; width: 100%; font-size: 12px; text-align: right; font-variant-numeric: tabular-nums; }
+.ugc-analytics th { font-weight: 400; color: var(--muted, #a6adbd); font-size: 10px; white-space: nowrap; padding: 0 12px 14px; }
+.ugc-analytics td { padding: 15px 12px; border-top: 1px solid var(--line, #2b303e); }
+.ugc-analytics th:first-child, .ugc-analytics td:first-child { text-align: left; padding-left: 0; }
+.ugc-analytics th:last-child, .ugc-analytics td:last-child { padding-right: 0; }
+.ugc-analytics td:first-child { min-width: 180px; max-width: 460px; overflow-wrap: anywhere; line-height: 1.5; }
+.ugc-analytics td a { text-decoration: none; }
+.ugc-analytics td a:hover { color: var(--ugc-blue); text-decoration: underline; }
+.ugc-analytics .ugc-rank { color: var(--muted, #a6adbd); display: inline-block; min-width: 25px; font-size: 10px; }
+.ugc-analytics .ugc-expand { display: block; width: 100%; margin-top: 12px; padding: 13px; font: inherit; font-size: 11px; color: var(--ugc-blue); border: 1px solid var(--line, #2b303e); border-radius: 6px; background: transparent; cursor: pointer; }
+.ugc-analytics .ugc-expand:hover { background: #252a38; }
+.ugc-analytics .ugc-footnotes { padding-top: 15px; }
+.ugc-analytics .ugc-footnotes p { margin-block: 5px; }
+.ugc-analytics .ugc-message { padding: 30px; border: 1px solid var(--line, #2b303e); border-radius: 12px; color: var(--muted, #a6adbd); line-height: 1.7; }
+.ugc-analytics .ugc-sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+@media (max-width: 750px) {
+  .ugc-analytics .ugc-heading, .ugc-analytics .ugc-toolbar, .ugc-analytics .ugc-chart-panel > .ugc-panel-heading { align-items: flex-start; flex-direction: column; gap: 17px; }
+  .ugc-analytics .ugc-status { text-align: left; }
+  .ugc-analytics .ugc-secondary { grid-template-columns: 1fr; }
+  .ugc-analytics .ugc-panel { padding: 18px; }
+  .ugc-analytics .ugc-stat { padding: 18px; }
+  .ugc-analytics .ugc-summary { grid-template-columns: 1fr 1fr; }
+  .ugc-analytics .ugc-chart-panel { padding-inline: 10px; }
+  .ugc-analytics .ugc-chart text { font-size: 16px; }
+  .ugc-analytics .ugc-chart-panel > .ugc-panel-heading, .ugc-analytics .ugc-legend, .ugc-analytics .ugc-chart-note, .ugc-analytics .ugc-daily-details { margin-inline: 8px; }
+}

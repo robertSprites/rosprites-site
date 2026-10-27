@@ -1,0 +1,18 @@
+# Roblox credentials and private analytics files never belong in this repository.
+.env
+.env.*
+config.ini
+roblox_cookie.txt
+cookie.txt
+*.cookie
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+*.csv
+*.csv.zip
+.venv/
+__pycache__/
+dist/
+
+# data/ugc-stats.json is an intentionally public aggregate export, not the database.
