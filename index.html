@@ -109,8 +109,6 @@
 
         const gentle = reducedMotion.matches;
         const count = gentle ? 10 : 48;
-        const maximum = gentle ? 30 : 240;
-        ghosts.splice(0, Math.max(0, ghosts.length + count - maximum));
 
         for (let i = 0; i < count; i++) {
           const size = 28 + Math.random() * 46;
