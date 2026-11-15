@@ -10,4 +10,8 @@ removing ghosts already falling. Rain uses one canvas, removes ghosts after
 they fall offscreen, and stops when empty or when the tab is hidden.
 Reduced motion preferences use fewer ghosts without spinning or swaying.
 
+Link previews use the requested Grabify title, description, and logo as a
+prank. The logo is served locally from `assets/discord-preview.png`; the
+preview metadata does not add tracking or change the ghost page.
+
 The private Roblox analytics collector remains separate from this website.
