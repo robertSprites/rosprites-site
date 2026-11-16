@@ -11,11 +11,30 @@
     :root { color-scheme: light; background: #fff; animation: shades 6.984s step-end infinite; }
     html, body { margin: 0; min-height: 100%; }
     body { min-height: 100vh; }
+    audio { display: none; }
     @keyframes shades {
       0%, 100% { background-color: #fff; }
       50% { background-color: #000; }
     }
   </style>
 </head>
-<body></body>
+<body>
+  <audio id="background-music" src="assets/background.mp3" preload="metadata" autoplay loop></audio>
+  <script>
+    (() => {
+      const music = document.getElementById('background-music');
+      const start = () => {
+        music.play().then(() => {
+          document.removeEventListener('click', start);
+          document.removeEventListener('keydown', start);
+        }).catch(() => {
+          // A click or keypress can start playback when autoplay is blocked.
+        });
+      };
+      document.addEventListener('click', start);
+      document.addEventListener('keydown', start);
+      start();
+    })();
+  </script>
+</body>
 </html>
