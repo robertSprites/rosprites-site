@@ -1,16 +1,13 @@
 # Rosprites
 
-An intentionally blank static page that alternates full white and full black
-every 3.492 seconds. A CSS animation runs a 6.984-second cycle with an instant
-change halfway through. Serve `index.html` directly; there is no build step
-or visible interface.
+A pure black page with one centered Little Plustergeist image button. Clicking,
+tapping, or activating it with the keyboard makes smaller ghost PNGs rain down
+the screen. There is no visible text or audio.
 
-`assets/background.mp3` is the full supplied background track, encoded at
-96 kbps to fit the hosting limit. Audio loops without visible controls.
-Playback starts automatically when the browser allows it; otherwise, clicking,
-tapping, or pressing a key anywhere on the page starts it. Playback retries do
-not restart a track that is already playing. The audio is hosted locally and
-uses metadata preloading so the full recording need not load before playback.
+The static site needs no build step. Serve the repository root; `index.html`
+loads `assets/little-plustergeist.png`. Every click adds more rain without
+removing ghosts already falling. Rain uses one canvas, removes ghosts after
+they fall offscreen, and stops when empty or when the tab is hidden.
+Reduced motion preferences use fewer ghosts without spinning or swaying.
 
-Earlier versions of the website are preserved in Git history.
 The private Roblox analytics collector remains separate from this website.
